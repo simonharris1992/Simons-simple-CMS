@@ -19,6 +19,7 @@ How to use it:
  You are now free to write your own site in index.php. Put all your webcode where prompted.
  To pull text from the database create it in the /admin UI and in your index code use <?php echo $r[x]; ?> where x is equal to the ID available in the /admin ui. There is some simple code already in the index.php you can use as reference for functionality
 
+if you have any questions or requests fire a message at: me@simonharris.co
 
 
 Planned updates (no order announced):
@@ -27,3 +28,4 @@ Planned updates (no order announced):
 - consider the options for multipage websites e.g. one table per page or linear array
 - uploading and modifying of pictures
 - brute force protection for login
+- improve clarity of formatting of the input fields
