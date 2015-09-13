@@ -13,6 +13,12 @@ if( $user->is_logged_in() ){ header('Location: index.php'); }
   <title>Admin Login</title>
   <link rel="stylesheet" href="../style/normalize.css">
   <link rel="stylesheet" href="../style/main.css">
+	 <script language="JavaScript" type="text/javascript">
+	 	//focus on input field, there ya go rob ;)
+		window.onload = function() {
+    		document.getElementById("username").focus();
+		};
+    </script>
 </head>
 <body>
 
@@ -47,7 +53,7 @@ if( $user->is_logged_in() ){ header('Location: index.php'); }
 	<!-- post method is used in the POST request at the top of the page and is used to 
 		process he data of the above form -->
 	<form action="" method="post">
-	<p><label>Username</label><input type="text" name="username" value=""  /></p>
+	<p><label>Username</label><input id="username" type="text" name="username" value=""  autofocus/></p>
 	<p><label>Password</label><input type="password" name="password" value=""  /></p>
 	<p><label></label><input type="submit" name="submit" value="Login"  /></p>
 	</form>
