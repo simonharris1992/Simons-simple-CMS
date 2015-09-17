@@ -10,15 +10,17 @@ CREATE TABLE `CMS_users` (
   `username` varchar(255) DEFAULT NULL,
   `password` varchar(255) DEFAULT NULL,
   `email` varchar(255) DEFAULT NULL,
+  `log_time` datetime DEFAULT NULL,
+  `failed_count` int(11) DEFAULT NULL,
   PRIMARY KEY (`memberID`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 LOCK TABLES `CMS_users` WRITE;
 /*!40000 ALTER TABLE `CMS_users` DISABLE KEYS */;
 
-INSERT INTO `CMS_users` (`memberID`, `username`, `password`, `email`)
+INSERT INTO `CMS_users` (`memberID`, `username`, `password`, `email`, `log_time`, `failed_count`)
 VALUES
-  (1,'Demo','$2a$12$TF8u1maUr5kADc42g1FB0ONJDEtt24ue.UTIuP13gij5AHsg5f5s2','simon@simon.com');
+  (1,'Demo','$2a$12$TF8u1maUr5kADc42g1FB0ONJDEtt24ue.UTIuP13gij5AHsg5f5s2','demo@demo.com', '2015-09-17 12:57:33', 0);
 
 /*!40000 ALTER TABLE `CMS_users` ENABLE KEYS */;
 UNLOCK TABLES;
