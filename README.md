@@ -1,4 +1,4 @@
-Simple CMS v0.1
+Simple CMS v0.2
 
 =================================
 
@@ -21,11 +21,12 @@ How to use it:
 
 if you have any questions or requests fire a message at: me@simonharris.co
 
+V0.2 ADDED BRUTEFORCE PROTECTION (+ SMALL QOL CHANGES TO LOGIN PAGE)
 
 Planned updates (no order announced):
 - full form validation in admin panel
 - privilidge levels for users
 - consider the options for multipage websites e.g. one table per page or linear array
 - uploading and modifying of pictures
-- brute force protection for login
+x brute force protection for login (added in 0.2)
 - improve clarity of formatting of the input fields
